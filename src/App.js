@@ -53,7 +53,7 @@ function App() {
 
             console.log("Sending Full Chat History to API:", JSON.stringify(formattedHistory, null, 2));
 
-            const genAI = new GoogleGenerativeAI("AIzaSyBOw3JYde0QJvgEbep5mzSVZcUX5574EUQ");
+            const genAI = new GoogleGenerativeAI(YOUR_API_KEY);
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
             const result = await model.generateContent({ contents: formattedHistory });
