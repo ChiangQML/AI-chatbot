@@ -1,5 +1,5 @@
-# Description
-Use ReactJS, Node.js and Gemini API to build a simple AI chatbot JJ.
+# AI-chatbot
+JavaScript CLI program using React.js, Node.js, and Gemini API to build an AI chatbot, JJ, capable of intelligent conversations with real-time context retention.
 
 ## Getting Started with chatbot JJ
 
