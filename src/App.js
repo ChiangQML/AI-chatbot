@@ -90,7 +90,7 @@ function App() {
                 </button>
 
                 <div className="chatbot-popup">
-                    {/*Chatbot header*/}
+       
                     <div className="chat-header">
 
                     <div className="header-info">
@@ -99,8 +99,7 @@ function App() {
                         </div>
                         <button onClick={() => setShowChatbox(prevState => !prevState)}><ArrowDropDownIcon/></button>
                     </div>
-
-                    {/*Chatbot body*/}
+               
                     <div ref={chatBodyRef} className="chat-body">
                         <div className="message bot-message">
                             <ChatbotIcon/>
@@ -109,24 +108,16 @@ function App() {
                             </p>
                         </div>
 
-
-                        {/* render the chat history dynamically*/}
                         {chatHistory.map((chat,index) =>(
                             <ChatMessage key={index} chat={chat}/>
                         ))}
-
-
                     </div>
 
-                    {/*Chatbot Footer*/}
                     <div className="chat-footer">
                         <ChatForm chatHistory={chatHistory} setChatHistory = {setChatHistory} generateBotResponse={generateBotResponse}/>
                     </div>
 
                 </div>
-
-
-
             </div>
         </div>
     );
